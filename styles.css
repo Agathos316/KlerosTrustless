@@ -24,19 +24,12 @@ body {
 
 .header {
     margin: auto;
-    background-image: url("\symbol-themis-BORDER.png");
-    background-size: 7%;
+    background-image: url("\symbol-themis-BORDER-with-text.png");
+    background-size: calc(max(23%,170px));
     background-repeat: no-repeat;
     background-position-x: 97%;
-    height: 15vh;
-}
-
-.headerRight {
-    color: #E3D0FF;
-    float: right;
-    margin-right: 9.7%;
-    margin-top: 1.1%;
-    line-height: 0.1vw;
+    background-position-y: 50%;
+    height: 17vh;
 }
 
 h1 {
