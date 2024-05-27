@@ -22,23 +22,13 @@ body {
     color: white;
 }
 
-h1 {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 22px;
-    text-align: center;
-}
-
 .header {
     margin: auto;
     background-image: url("\symbol-themis-BORDER.png");
     background-size: 7%;
     background-repeat: no-repeat;
     background-position-x: 97%;
+    height: 15vh;
 }
 
 .headerRight {
@@ -49,36 +39,42 @@ h2 {
     line-height: 0.1vw;
 }
 
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    height: 8vh;
+}
+
 .container {
     width: 90%;
-    height: 100px;
     margin: 0 auto;
-    padding: 10px;
-    justify-content: center;
+    justify-items: center;
+    text-align: center;
 }
 
 .leftLeftPane {
-    width: 25%;
-    height: 15vh;
+    height: calc(max(0.4vh,70px));
+    width: calc(max(24%,300px));
     display: inline-block;
 }
 
 .leftPane {
-    width: 24%;
-    height: 15vh;
+    height: calc(max(0.4vh,70px));
+    width: calc(max(24%,300px));
     display: inline-block;
 }
-  
+
 .rightPane {
-    width: 24%;
-    height: 15vh;
+    height: calc(max(0.4vh,70px));
+    width: calc(max(24%,300px));
     display: inline-block;
 }
   
 .rightRightPane {
-    width: 25%;
+    height: calc(max(0.4vh,70px));
+    width: calc(max(24%,300px));
     display: inline-block;
-    height: 15vh;
 }
 
 .layered {
@@ -94,11 +90,13 @@ h2 {
 
 .explainerText {
     position: relative;
+    height: auto;
     width: 50%;
     padding-left: 20px;
     padding-right: 20px;
     display: none;
     text-align: left;
+    font-size: calc(12px + 0.5vw);
     line-height: 1.5;
     color: #999;
     background-color: #fff;
@@ -109,30 +107,10 @@ h2 {
     opacity: 0;
 }
 
-.leftLeftSize {
-    font-size: calc(12px + 0.5vw);
-    height: calc(240px + 0.17 * (800px - 60vw));
-}
-
-.leftSize{
-    font-size: calc(7.2px + 0.78vw);
-    height: calc(605px + 0.17 * (800px - 60vw));
-}
-
-.rightSize{
-    font-size: calc(8.5px + 0.7vw);
-    height: calc(400px + 0.17 * (800px - 60vw));
-}
-
-.rightRightSize{
-    font-size: calc(7.2px + 0.78vw);
-    height: calc(530px + 0.17 * (800px - 60vw));
-}
-
 .findOutMore{
     position: relative;
     text-align: right;
-    font-size: calc(8px + 0.4vw);
+    font-size: calc(10px + 0.3vw);
     color: #009aff;
 }
 
@@ -154,10 +132,10 @@ footer {
 .button-65 {
     margin: 0;
     position: relative;
-    top: 50%;
+    /*top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
 
     appearance: none;
     backface-visibility: hidden;
@@ -169,13 +147,15 @@ footer {
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-size: calc(5px + 1vw);
+    font-size: calc(13px + 0.5vw);
     font-weight: bold;
-    height: calc(10px + 3vw);
+    height: calc(30px + 1.5vw);
     letter-spacing: normal;
     line-height: 1.5;
     outline: none;
     padding: 2px;
+    padding-left: calc(10px + 1.5vw);
+    padding-right: calc(10px + 1.5vw);
     text-align: center;
     text-decoration: none;
     transition: all .3s;
@@ -184,10 +164,10 @@ footer {
     touch-action: manipulation;
     vertical-align: top;
     white-space: nowrap;
-    width: calc(50px + 14vw);
 }
 
 .button-65:hover {
     background-color: #0a54b4 !important;
     transition-duration: .35s !important;
 }
+
